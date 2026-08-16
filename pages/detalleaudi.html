@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Vehículo - JDM Pride</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-zinc-900">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html">
+                    <span>チロホ</span> <span class="text-danger fw-bold">JDM PRIDE</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/admin.html">Administrador</a></li>
+                        <li class="nav-item d-flex align-items-center ms-lg-3">
+                            <button id="theme-toggle" class="btn btn-outline-warning btn-sm" type="button">
+                                🌙 / ☀️ Mod
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Detalle del Producto -->
+    <main class="container py-5">
+        <div class="row align-items-center g-4">
+
+            <!-- Columna Izquierda: Carrusel de Imágenes -->
+            <div class="col-lg-7">
+                <div id="carruselAudi" class="carousel slide rounded shadow overflow-hidden" data-bs-ride="carousel">
+
+                    <!-- Indicadores inferiores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselAudi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                        <button type="button" data-bs-target="#carruselAudi" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                        <button type="button" data-bs-target="#carruselAudi" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+                    </div>
+
+                    <!-- Galería de imágenes -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/audi/audirs.jpg" class="d-block w-100" alt="Audi RS6 Avant - Frontal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/audi/audirear.jpg" class="d-block w-100" alt="Audi RS6 Avant - Posterior">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/audi/interior2.jpg" class="d-block w-100" alt="Audi RS6 Avant - Interior">
+                        </div>
+                    </div>
+
+                    <!-- Controles de navegación (Anterior / Siguiente) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselAudi" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselAudi" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Información del Vehículo -->
+            <div class="col-lg-5">
+                <h1 class="display-5 text-danger fw-bold">Audi RS6 Avant</h1>
+                <h3 class="text-warning mb-4">$135,000 USD</h3>
+                <p class="lead">El Audi RS6 Avant es un auto familiar de gran lujo y alto desempeño. Tiene un motor V8 biturbo de 4.0 litros con hasta 630 caballos de fuerza (en su versión Performance). Acelera de 0 a 100 km/h en 3.4 segundos. Viene de la planta de Audi
+                    en Neckarsulm, Alemania, creado por la división deportiva Audi Sport GmbH (antes Quattro GmbH).</p>
+
+                <h5 class="mt-4 border-bottom pb-2">Especificaciones Técnicas</h5>
+                <ul class="list-unstyled">
+                    <li><strong>Motor:</strong> V8 de 4.0 litros TFSI biturbo.</li>
+                    <li><strong>Transmisión:</strong> Automática Tiptronic de 8 velocidades.</li>
+                    <li><strong>Potencia:</strong> Desde 600 hp hasta 630 hp.</li>
+                    <li><strong>Tracción:</strong> Integral permanente quattro.</li>
+                    <li><strong>Aceleración:</strong> (0-100 km/h): 3.4 a 3.6 segundos.</li>
+                    <li><strong>Velocidad máxima:</strong> Limitada a 250 km/h (ampliable opcionalmente a 280 o 305 km/h).</li>
+                    <li><strong>Peso:</strong> 2.150kg</li>
+                    <li><strong>Año:</strong> 2024</li>
+                    <li><strong>Kilometraje:</strong> 0km</li>
+                    <li><strong>Tecnología:</strong> Sistema híbrido ligero (Mild-Hybrid) de 48V y desconexión de cilindros para ahorrar combustible.</li>
+                </ul>
+
+                <div class="d-grid gap-2 mt-4">
+                    <a href="contacto.html" class="btn btn-danger btn-lg">Solicitar Información</a>
+                    <a href="catalogo.html" class="btn btn-outline-danger">Volver al Catálogo</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/darkmode.js"></script>
+    <script src="../js/style.css"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* Variables CSS */
+
+:root {
+    --primary-color: #dc2626;
+    /* Rojo JDM */
+    --bg-dark: #121212;
+    --text-light: #f8f9fa;
+    --font-main: 'Arial', sans-serif;
+
+    /* Sobrescribir danger en Bootstrap 5.3 */
+    --bs-danger: #dc2626;
+    --bs-danger-rgb: 220, 38, 38; /* Convertido a RGB (220, 38, 38) */
+}
+/* css/style.css */
+
+/* Botón Danger Personalizado para Bootstrap */
+.btn-danger {
+    background-color: #ff1e27 !important;
+    border-color: #ff1e27 !important;
+    color: #ffffff !important;
+    font-weight: 700;           /* Equivalente a fw-bold */
+    text-transform: uppercase;   /* Para texto en mayúsculas */
+    padding: 0.625rem 1.25rem;  /* Ajuste de relleno */
+    border-radius: 0.5rem;      /* Borde redondeado */
+    transition: all 0.2s ease-in-out;
+    
+}
+
+/* Estado al pasar el cursor (Hover) */
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+    background-color: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: #050505;
+    color: var(--text-light);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    /* Permite que el footer baje si hay poco contenido */
+}
+
+
+/* Animaciones y Transiciones */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hero Section (Carousel) */
+
+.hero-bg {
+    background-color: var(--bg-dark);
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/skylinePortada.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-control::placeholder {
+    color: #424242 !important;
+    opacity: 1;
+}
